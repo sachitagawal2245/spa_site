@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer booking</title>
+    <link rel="stylesheet" href="customer.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               
+                <ul>
+                     <div class="nav-logo border">
+                     <div class="logo">
+                     </div>
+                    </div>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#shop">Service</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="about_us" id="about">
+        <h2>About us:</h2>
+        <p>
+            At Kayakalp Spa, we believe that true wellness is a harmony of body, mind, and spirit.
+          Inspired by the ancient wisdom of Ayurveda and modern relaxation techniques, our spa offers a serene escape from the stress of everyday life.
+
+          From rejuvenating massages and detox therapies to skin and beauty treatments, every service at Kayakalp Spa is designed to restore balance, renew energy, and revive natural glow.
+
+        Our highly trained therapists use authentic techniques, premium natural oils, and a personalized approach to ensure every guest experiences pure relaxation.
+
+        Step into Kayakalp Spa and allow yourself to be embraced by tranquility, luxury, and healing. Whether you seek relief, rejuvenation, or simply a peaceful moment for yourself, we are here to help you rediscover wellness from within.
+
+        </p>
+    </div>
+    <h2 class="hi"> Services</h2>
+    <div class="shop-section" id="shop">
+      <div class="box1  box">
+       <div class="box-content">
+        <h2>Head massages</h2>
+        <div class="box-img" style="background-image: url('head.png');"></div>
+        <p>See more</p>
+       </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Body massages</h2>
+          <div class="box-img" style="background-image: url('body.jpeg');"></div>
+          <p>See more</p>
+         </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+         <h2>Oil massages</h2>
+            <div class="box-img" style="background-image: url('Oil.png');"></div>
+            <p>See more</p>
+         </div>
+      </div>
+     
+    </div>
+    <h2 class="hi2">Products</h2>
+    <div class="shop-section">
+      <div class="box1  box">
+       <div class="box-content">
+        <h2>Oils</h2>
+        <div class="box-img" style="background-image: url('oil2.png');"></div>
+        <p>See more</p>
+       </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Shampoos</h2>
+          <div class="box-img" style="background-image: url('shampoo.png');"></div>
+          <p>See more</p>
+         </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+         <h2>Creams</h2>
+            <div class="box-img" style="background-image: url('lotion.png');"></div>
+            <p>See more</p>
+         </div>
+      </div>
+     
+    </div>
+     <h2 class="hi2">Book Your Spa Appointment</h2>
+     <div id="booking">
+  <form action="customer.php" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Phone:</label><br>
+    <input type="text" name="phone" required><br><br>
+
+    <label>Service:</label><br>
+    <select name="service_id" required>
+      <option value="1">Hair Massage</option>
+      <option value="2"> Body Massage</option>
+      <option value="3">Oil Massage</option>
+      <option value="4">None</option>
+
+    </select><br><br>
+
+    <label>Product:</label><br>
+    <select name="product_id" required>
+      <option value="1">Shampoo</option>
+      <option value="2">Massage Oil</option>
+      <option value="3">Face Cream</option>
+      <option value="4">None</option>
+
+    </select><br><br>
+
+    <label>Booking Time:</label><br>
+    <input type="text" name="booking" required>
+     <br><br>
+
+  
+      
+  <button type="submit">Book Now</button>
+      </form>
+     </div>
+     <h2 class="hi2">Contact</h2>
+
+  <div id="contact">
+   <div>
+     <p><i class="fa-regular fa-paper-plane"></i>Kayalapspa@gamil.com</p>
+                     <p><i class="fa-solid fa-phone"></i>908766920</p>
+                     <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                         <p>copyright ©Made By Sachit &Yash </p>
+                        </div>
+   </div>
+  </div>  
+  
+   
+</body>
+</html>

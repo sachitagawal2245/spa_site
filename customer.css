@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #ffd700; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* Navbar */
+.container {
+    height: 100px;
+    background-color: #3e2723; 
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    border-bottom: 4px solid #ffd700;
+}
+
+nav ul {
+    list-style: none;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5d580;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background: #ffd700;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-logo {
+    height: 80px;
+    width: 100px;
+    margin-right: auto;
+}
+
+.logo {
+    height: 80px;
+    width: 100%;
+    background-image: url("Kaya.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* About Us */
+.about_us {
+    margin: 60px auto;
+    max-width: 1000px;
+    padding: 30px;
+    background: rgba(62, 39, 35, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.about_us h2 {
+    font-size: 38px;
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about_us p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #fefefe;
+    /* text-align: justify; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Headings */
+.hi, .hi2 {
+   text-align: center;
+   font-size: 34px;
+   font-weight: 600;
+   margin: 40px 0 20px;
+   color: #3e2723;
+   text-shadow: 1px 1px 2px #fff;
+}
+
+/* Services & Products */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px;
+}
+
+.box {
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    color: #000;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.box-img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.box-content h2 {
+    font-size: 22px;
+    color: #3e2723;
+    margin-bottom: 10px;
+}
+
+.box-content p {
+    /* display: inline-block; */
+    color: #fff;
+    text-align: center;
+    background: #3e2723;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.box-content p:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+/* Booking */
+#booking {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+#booking form {
+    background: #3e2723;
+    color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+form label {
+    /* display: block; */
+    font-size: 18px;
+    margin: 12px 0 6px;
+}
+
+form select,
+form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+form button {
+    background: #ffd700;
+    color: #3e2723;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #ce1414;
+    color: #fff;
+}
+
+/* Contact */
+#contact {
+    padding: 40px 20px;
+    background: #3e2723;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 4px solid #ffd700;
+}
+
+#contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.social-icon {
+    margin-top: 20px;
+}
+
+.social-icon a {
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 10px;
+    color: #ffd700;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon a:hover {
+    color: #ce1414;
+    transform: scale(1.2);
+}
